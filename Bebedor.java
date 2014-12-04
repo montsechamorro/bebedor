@@ -66,7 +66,7 @@ public class Bebedor
                 System.out.println("No");
             }
         }
-        else if(pregunta.contains(nombreBebedor)) // si la pregunta contiene el nombre del bebedor
+        else if(nivelAlcoholSangre>limite || (pregunta.contains(nombreBebedor))) // si la pregunta contiene el nombre del bebedor
         {
             System.out.println(pregunta.toUpperCase());
 
