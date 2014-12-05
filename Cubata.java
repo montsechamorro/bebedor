@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Cubata here.
+ * Representa un cubata
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -10,21 +10,21 @@ public class Cubata
     //indica el nombre de la copa
     private String nombreCopa;
     // indica la cantidad de alcohol que tiene la copa
-    private int cantidadAlcohol;
+    private float cantidadAlcohol;
 
     /**
-     * Constructor for objects of class Cubata
+     * Constructor de la clase:crea un cubata con el nombre y la cantidad de alcohol dada
      */
-    public Cubata(String nombreCopa, int cantidadAlcohol)
+    public Cubata(String nombreCopa, float cantidadAlcohol)
     {
        this.nombreCopa = nombreCopa;
        this.cantidadAlcohol = cantidadAlcohol;
        
     }
     /**
-     * metodo que devuelve la cantidad de alcohol que hay en la copa
+     * metodo getter que devuelve la cantidad de alcohol que hay en la copa
      */
-    public int getCantidadAlcohol()
+    public float getCantidadAlcohol()
     {
         return cantidadAlcohol;
     }
