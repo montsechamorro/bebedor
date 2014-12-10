@@ -5,4 +5,6 @@ comment0.text=\r\n\ Constructor\ de\ la\ clase\:crea\ un\ cubata\ con\ el\ nombr
 comment1.params=
 comment1.target=float\ getCantidadAlcohol()
 comment1.text=\r\n\ metodo\ getter\ que\ devuelve\ la\ cantidad\ de\ alcohol\ que\ hay\ en\ la\ copa\r\n
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ getNombreCopa()
+numComments=3

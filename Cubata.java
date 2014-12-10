@@ -28,6 +28,10 @@ public class Cubata
     {
         return cantidadAlcohol;
     }
+    public String getNombreCopa()
+    {
+        return nombreCopa;
+    }
      
    
     

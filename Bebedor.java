@@ -13,6 +13,8 @@ public class Bebedor
     private float nivelAlcoholSangre;
     // indica el limite de alcohol en sangre que admite el bebedor antes de dejar de beber copas
     private float limite;
+    // guarda el nombre de la ultima copa que bebe
+    private String ultimaCopa;
 
     /**
      * Constructor for objects of class Bebedor
@@ -22,6 +24,7 @@ public class Bebedor
         this.nombreBebedor = nombreBebedor;
         nivelAlcoholSangre = 0;
         this.limite = limite;
+        ultimaCopa = "";
     }
 
     /**
@@ -33,10 +36,18 @@ public class Bebedor
         {
             System.out.println("No quiero beber mas copas!!");
         }
+        else if(ultimaCopa == nombreCopa.getNombreCopa())
+    
+        {
+            nivelAlcoholSangre = nivelAlcoholSangre + (nombreCopa.getCantidadAlcohol()* 2);
+        }
+            
         else // se bebe copa, aumentamos en nivel de alcohol en sangre
         {
             nivelAlcoholSangre = nivelAlcoholSangre + nombreCopa.getCantidadAlcohol();// acumula el nivel de alcohol total en sangre        
         }
+        
+        ultimaCopa = nombreCopa.getNombreCopa();
 
     }
 
